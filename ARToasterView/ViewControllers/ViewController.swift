@@ -11,12 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet fileprivate weak var statusSegment: UISegmentedControl!
-
     let staticMessage = "Copyright © 2020 Rohit Makwana. All rights reserved."
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.statusSegment.addTarget(self, action: #selector(self.statusSegmentedAction(_:)), for: .valueChanged)
     }
 

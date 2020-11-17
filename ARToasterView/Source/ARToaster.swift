@@ -105,7 +105,7 @@ class ARToaster: UIView {
 
         if self.status != .normal {
             self.addSubview(self.statusImageView)
-            self.statusImageView.image = self.getImage()
+            self.statusImageView.image = self.status.image
 
             NSLayoutConstraint.activate([statusImageView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: labelPadding),
                                          statusImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
@@ -123,28 +123,10 @@ class ARToaster: UIView {
         self.cornerRadius(10)
         self.applyShadow(WithColor: .black, opacity: 0.3, radius: 10)
         self.alpha = 0.0
-    }
-
-    @objc fileprivate func closeButotnAction(_ sender: UIButton) {
-        self.hide()
-    }
-
-    fileprivate func getImage() -> UIImage? {
-
-        switch self.status {
-        case .success:
-            return #imageLiteral(resourceName: "ic_checkmark")
-        case .error:
-            return #imageLiteral(resourceName: "ic_error")
-        case .warning:
-            return #imageLiteral(resourceName: "ic_warning")
-        case .normal:
-            return nil
-        }
+        self.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
     }
 
     public func show() {
-
         self.initilizeUI()
         UIView.animate(withDuration: 0.5, delay: 0.1, options: .curveEaseInOut, animations: {
             self.alpha = 1

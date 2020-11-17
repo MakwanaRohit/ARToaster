@@ -33,5 +33,18 @@ public enum ARStatus : CaseIterable {
     case error
     case warning
     case normal
+
+    var image: UIImage? {
+        switch self {
+        case .success:
+            return #imageLiteral(resourceName: "ic_checkmark")
+        case .error:
+            return #imageLiteral(resourceName: "ic_error")
+        case .warning:
+            return #imageLiteral(resourceName: "ic_warning")
+        case .normal:
+            return nil
+        }
+    }
 }
 

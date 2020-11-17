@@ -61,16 +61,40 @@
 			isa = PBXGroup;
 			children = (
 				8A473B812554FF8900281C32 /* AppDelegate.swift */,
-				8A473B852554FF8900281C32 /* ViewController.swift */,
-				8AF3D395255974FB001E2D14 /* Extension.swift */,
-				8AF3D397255976BE001E2D14 /* ARToasterConfigs.swift */,
-				8AF86AA4255BAD76004A5BED /* ARToaster.swift */,
+				8AF6DFA2256394BB004EF01A /* ViewControllers */,
+				8AF6DFA1256394AD004EF01A /* Helper */,
+				8AF6DFA0256394A1004EF01A /* Source */,
 				8A473B872554FF8900281C32 /* Main.storyboard */,
 				8A473B8A2554FF8E00281C32 /* Assets.xcassets */,
 				8A473B8C2554FF8E00281C32 /* LaunchScreen.storyboard */,
 				8A473B8F2554FF8E00281C32 /* Info.plist */,
 			);
 			path = ARToasterView;
+			sourceTree = "<group>";
+		};
+		8AF6DFA0256394A1004EF01A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8AF3D397255976BE001E2D14 /* ARToasterConfigs.swift */,
+				8AF86AA4255BAD76004A5BED /* ARToaster.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		8AF6DFA1256394AD004EF01A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8AF3D395255974FB001E2D14 /* Extension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		8AF6DFA2256394BB004EF01A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A473B852554FF8900281C32 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
