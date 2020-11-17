@@ -35,8 +35,11 @@ add files in your project
 By code, using initializer. 
 
 ```swift
-let config = ARToasterConfigs(messageColor: .white, messageFont: UIFont.systemFont(ofSize: 12, weight: .regular), messageAlignment: .center, backgrounColor: .black)
-ARToaster(message: staticMessage, duration: 5, position: .top, status: .success, config: config)
+let config = ARToasterConfigs(messageColor: .white, messageFont: UIFont.systemFont(ofSize: 12, weight: .regular),
+                              messageAlignment: .center, backgrounColor: .black)
+ARToaster(message: "Copyright © 2020 Rohit Makwana. All rights reserved.",
+          duration: 5, position: .top,
+          status: .success, config: config)
 ```
 ```
 ### Control
